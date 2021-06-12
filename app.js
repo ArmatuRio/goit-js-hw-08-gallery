@@ -116,18 +116,18 @@ function onGalleryClick(e) {
 }
 
 function onClickHandlerClose(e) {
-  e.preventDefault(); 
+  // e.preventDefault(); 
   refs.lightbox.classList.remove("is-open");
   refs.lightbox__image.src = '';
   refs.lightbox__image.alt = '';
   window.removeEventListener("keyup", clickKey);
 }
 
-function closeLightbox(event) {
-  if (event.target === event.currentTarget) {
-    onClickHandlerClose();
-  }
-}
+// function closeLightbox(event) {
+//   if (event.target === event.currentTarget) {
+//     onClickHandlerClose();
+//   }
+// }
 
 function clickKey(event) {
   if (event.code === "Escape") {
